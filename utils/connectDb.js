@@ -13,6 +13,8 @@ const connection = mysql.createConnection({
   user: "sql7764741",
   password: "5gQPPFCqDe",
   database: "sql7764741",
+   enableKeepAlive: true,
+  keepAliveInitialDelay: 10000,
 });
 
 module.exports = connection;
